@@ -11,8 +11,8 @@ class App extends Component {
 
   componentDidMount() {
     fetch('https://jobhunt-api.herokuapp.com/jobs')
-    .then(response => response.json()
-    .then(response) => this.setState({jobs: response}))
+    .then((response) => response.json())
+    .then((response) => this.setState({jobs: response,}));
   }
 
   render() {
