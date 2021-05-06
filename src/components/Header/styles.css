@@ -1,10 +1,10 @@
 .header-container {
     display: flex;
-    max-width: 1300px;
+    max-width: 1800px;
     margin-left: auto;
     margin-top: 3rem;
 }
 
 .header-container img {
-    width: 250px;
+    width: 300px;
 }
