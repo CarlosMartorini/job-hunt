@@ -2,14 +2,20 @@ import { Component } from "react";
 import './styles.css';
 
 class Card extends Component {
+
+    openLink = (link) => {
+        window.open(link);
+    }
+
     render() {
+        const { job } = this.props;
         return(
             <div className='card'>
-                <img src="https://jobs.github.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbCtpIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--244fc62e8f513b51930d3aa66abe5f8b477a6e99/GTlogo-CMYK-large.jpg" alt='company-logo'/>
-                <h3>Company Title</h3>
-                <p>Cargo</p>
-                <span>Remote in United States</span>
-                <button>Get full details</button>
+                <img src={job.company_logo} alt='company-logo'/>
+                <h3>{job.company.length > 15 ? `${job.company.substring(0, 15)}...` : job.company}</h3>
+                <p>{job.title.length > 15 ? `${job.title.substring(0, 15)}...` : job.title}</p>
+                <span>{job.location}</span>
+                <button onClick={() => this.openLink(job.url)}>Get full details</button>
             </div>
         )
     }
