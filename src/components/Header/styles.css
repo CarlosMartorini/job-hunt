@@ -1,0 +1,10 @@
+.header-container {
+    display: flex;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-top: 3rem;
+}
+
+.header-container img {
+    width: 250px;
+}
