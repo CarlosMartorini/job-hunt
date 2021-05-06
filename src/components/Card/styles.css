@@ -1,0 +1,45 @@
+.card {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121212;
+    margin-top: 3rem;
+    border-radius: 20px;
+    border: 1px solid #0fbf6b;
+    margin-right: 2rem;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #0fbf6b;
+    position: absolute;
+    top: -45px;
+}
+
+.card h3, span {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
+    color: #0fbf6b;
+}
+
+.card span {
+    margin-bottom: 2rem;
+}
+
+.card button {
+    width: 200px;
+    height: 30px;
+    background-color: #8D22BF;
+    border-radius: 5px;
+    color: #f5f5f5;
+}
