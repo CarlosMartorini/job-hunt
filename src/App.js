@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://jobhunt-api.herokuapp.com/jobs')
+    fetch('https://jobhunt-api.herokuapp.com/jobs') //?description=javascript
     .then((response) => response.json())
     .then((response) => this.setState({jobs: response, loading: false}));
   }
